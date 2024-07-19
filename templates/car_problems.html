@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Garage - Car Problems</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Car Problems</h1>
+
+    <!-- Form for fetching car problems -->
+    <form id="carProblemsForm">
+        <input type="number" id="car_id" placeholder="Car ID" required>
+        <button type="submit">Get Problems</button>
+    </form>
+    <div id="carProblemsResults"></div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
